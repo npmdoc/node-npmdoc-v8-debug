@@ -1,0 +1,485 @@
+<html><head></head><body><div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a href="http://github.com/node-inspector/v8-debug">v8-debug (v1.0.1)</a>
+</h1>
+<h4>v8 debugger extending API</h4>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.v8-debug">module v8-debug</a><ol>
+
+        <li>
+
+            <span class="apidocSignatureSpan">boolean <span class="apidocSignatureSpan">v8-debug.</span>_webkitProtocolEnabled</span>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.v8-debug._events.close">
+            function <span class="apidocSignatureSpan">v8-debug.</span>_events.close
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.v8-debug.annotate_tag">
+            function <span class="apidocSignatureSpan">v8-debug.</span>annotate_tag
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.v8-debug.history">
+            function <span class="apidocSignatureSpan">v8-debug.</span>history
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.v8-debug.prepublish_to_npm">
+            function <span class="apidocSignatureSpan">v8-debug.</span>prepublish_to_npm
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">v8-debug.</span>_eventsCount</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">v8-debug.</span>_events</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.v8-debug._events">module v8-debug._events</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.v8-debug._events.close">
+            function <span class="apidocSignatureSpan">v8-debug._events.</span>close
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.v8-debug._events.close">module v8-debug._events.close</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.v8-debug._events.close.close">
+            function <span class="apidocSignatureSpan">v8-debug._events.</span>close
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.v8-debug._events.close.listener">
+            function <span class="apidocSignatureSpan">v8-debug._events.close.</span>listener
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.v8-debug.annotate_tag">module v8-debug.annotate_tag</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.v8-debug.annotate_tag.annotate_tag">
+            function <span class="apidocSignatureSpan">v8-debug.</span>annotate_tag
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.v8-debug.annotate_tag.__generatorFunction__">
+            function <span class="apidocSignatureSpan">v8-debug.annotate_tag.</span>__generatorFunction__
+            <span class="apidocSignatureSpan">(version)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.v8-debug.history">module v8-debug.history</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.v8-debug.history.history">
+            function <span class="apidocSignatureSpan">v8-debug.</span>history
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.v8-debug.history.__generatorFunction__">
+            function <span class="apidocSignatureSpan">v8-debug.history.</span>__generatorFunction__
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.v8-debug.prepublish_to_npm">module v8-debug.prepublish_to_npm</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.v8-debug.prepublish_to_npm.prepublish_to_npm">
+            function <span class="apidocSignatureSpan">v8-debug.</span>prepublish_to_npm
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.v8-debug.prepublish_to_npm.__generatorFunction__">
+            function <span class="apidocSignatureSpan">v8-debug.prepublish_to_npm.</span>__generatorFunction__
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.v8-debug" id="apidoc.module.v8-debug">module v8-debug</a></h1>
+
+
+
+
+    <h2>
+        <a href="#apidoc.element.v8-debug._events.close" id="apidoc.element.v8-debug._events.close">
+        function <span class="apidocSignatureSpan">v8-debug.</span>_events.close
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function g() {
+  target.removeListener(type, g);
+  if (!fired) {
+    fired = true;
+    listener.apply(target, arguments);
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.v8-debug.annotate_tag" id="apidoc.element.v8-debug.annotate_tag">
+        function <span class="apidocSignatureSpan">v8-debug.</span>annotate_tag
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function createPromise() {
+  return co.call(this, fn.apply(this, arguments));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.v8-debug.history" id="apidoc.element.v8-debug.history">
+        function <span class="apidocSignatureSpan">v8-debug.</span>history
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function createPromise() {
+  return co.call(this, fn.apply(this, arguments));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.v8-debug.prepublish_to_npm" id="apidoc.element.v8-debug.prepublish_to_npm">
+        function <span class="apidocSignatureSpan">v8-debug.</span>prepublish_to_npm
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function createPromise() {
+  return co.call(this, fn.apply(this, arguments));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.v8-debug._events" id="apidoc.module.v8-debug._events">module v8-debug._events</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.v8-debug._events.close" id="apidoc.element.v8-debug._events.close">
+        function <span class="apidocSignatureSpan">v8-debug._events.</span>close
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function g() {
+  target.removeListener(type, g);
+  if (!fired) {
+    fired = true;
+    listener.apply(target, arguments);
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.v8-debug._events.close" id="apidoc.module.v8-debug._events.close">module v8-debug._events.close</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.v8-debug._events.close.close" id="apidoc.element.v8-debug._events.close.close">
+        function <span class="apidocSignatureSpan">v8-debug._events.</span>close
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function g() {
+  target.removeListener(type, g);
+  if (!fired) {
+    fired = true;
+    listener.apply(target, arguments);
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.v8-debug._events.close.listener" id="apidoc.element.v8-debug._events.close.listener">
+        function <span class="apidocSignatureSpan">v8-debug._events.close.</span>listener
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">listener = function () {
+  this._unwrapDebugCommandProcessor();
+  this._unsetDebugEventListener();
+  process.nextTick(function() {
+    this.removeAllListeners();
+  }.bind(this));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.v8-debug.annotate_tag" id="apidoc.module.v8-debug.annotate_tag">module v8-debug.annotate_tag</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.v8-debug.annotate_tag.annotate_tag" id="apidoc.element.v8-debug.annotate_tag.annotate_tag">
+        function <span class="apidocSignatureSpan">v8-debug.</span>annotate_tag
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function createPromise() {
+  return co.call(this, fn.apply(this, arguments));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.v8-debug.annotate_tag.__generatorFunction__" id="apidoc.element.v8-debug.annotate_tag.__generatorFunction__">
+        function <span class="apidocSignatureSpan">v8-debug.annotate_tag.</span>__generatorFunction__
+        <span class="apidocSignatureSpan">(version)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function* (version) {
+  const history = yield require('./history')(version);
+  const tagname = 'v' + version;
+
+  return yield exec('git tag -a "' + tagname + '" -m "' + history + '"');
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.v8-debug.history" id="apidoc.module.v8-debug.history">module v8-debug.history</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.v8-debug.history.history" id="apidoc.element.v8-debug.history.history">
+        function <span class="apidocSignatureSpan">v8-debug.</span>history
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function createPromise() {
+  return co.call(this, fn.apply(this, arguments));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.v8-debug.history.__generatorFunction__" id="apidoc.element.v8-debug.history.__generatorFunction__">
+        function <span class="apidocSignatureSpan">v8-debug.history.</span>__generatorFunction__
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function* () {
+  const _lasttag = yield exec('git rev-list --tags --max-count=1');
+  const _version = yield exec('git describe --tags --abbrev=0 ' + _lasttag);
+  const version = _version ? ' ' + _version + '..' : '';
+
+  return ' ' + (yield exec('git log --no-merges --pretty="format: * %s (%an) %H%n"' + version));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.v8-debug.prepublish_to_npm" id="apidoc.module.v8-debug.prepublish_to_npm">module v8-debug.prepublish_to_npm</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.v8-debug.prepublish_to_npm.prepublish_to_npm" id="apidoc.element.v8-debug.prepublish_to_npm.prepublish_to_npm">
+        function <span class="apidocSignatureSpan">v8-debug.</span>prepublish_to_npm
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function createPromise() {
+  return co.call(this, fn.apply(this, arguments));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.v8-debug.prepublish_to_npm.__generatorFunction__" id="apidoc.element.v8-debug.prepublish_to_npm.__generatorFunction__">
+        function <span class="apidocSignatureSpan">v8-debug.prepublish_to_npm.</span>__generatorFunction__
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function* () {
+  rimraf.sync('./build');
+
+  const targets = [];
+  Object.keys(matrix).forEach(
+    (arch) =&gt; matrix[arch].forEach(
+    (platform) =&gt; versions.forEach(
+    (version) =&gt; targets.push(new Target(arch, platform, version))
+  )));
+
+  while (targets.length) yield install(targets.pop());
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
+</body></html>
